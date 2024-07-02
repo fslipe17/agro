@@ -3,18 +3,18 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+/* Cabeçalho da pagina */
 header{
     display: flex;
     justify-content: space-around;
     height: 140px;
     background-color: #183B59;
-    box-shadow: 0px 6px 12px black;
+    box-shadow: 0px 6px 12px #183B59;
     color: aliceblue;
 }
 header img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 0 auto;
     margin-bottom: 12px;
     padding-top: 8px;
@@ -23,8 +23,6 @@ header h1{
     text-align: center;
     margin-top: 12px;
 }
-
-
 .div-logo{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -35,7 +33,7 @@ header h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 18px;
+    font-size: 22px;
 }
 .div-logo img{
     margin: 0 auto;
@@ -57,6 +55,72 @@ header h1{
     display: grid;
     grid-template-rows: 1fr 1fr;
     color: aliceblue;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
+    text-shadow: 6px 7px 12px rgba(0,0,0,0.71);
+}
+.risco{
+    margin: 0;
+    padding: 0;
+    width: 3px;
+    height: 74%;
+    background-color: #6696ffda;
+    margin-top: 16px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 0px #6696ffda, 0px -3px 0px rgba(84, 115, 255, 0.705);
+    transition: box-shadow 0.3s ease-in-out;
+    /* box-shadow: 0px 3px 0px rgba(84, 115, 255, 0.705), 0px -3px 0px rgba(84, 115, 255, 0.705); */
+}
+/* Fim do Cabeçalho */
+
+/* Main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 120vw;
+    margin: 12px;
+}
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #057179;    
+    
+}
+.titulo h1{
+    width: 20%;
+    font-size: 3rem;
+    text-align: left;
+}
+.section-noticia{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex: 10 1 70%;
+    height: 90vh;
+    margin: 12px;
+}
+.aside{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    flex: 10 1 20%;
+    height: 90vh;
+    margin-top: 12px;
+}
+.div-aside{
+    padding: 12px;
+}
+
+.section-item{
+    margin: 12px;
+}
+main .section-noticia .section-item{
+    background-color: #057179;
+}
+
+.aside div{
+    background-color: #057179;
 }
